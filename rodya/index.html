@@ -9,18 +9,18 @@
 </head>
 <body>
 <script>
-  function isHappyTicket(ticket) {
-  let left = 0, right = 0
+ function invertCase(string){
+  let result = ''
 
-  for (let i = 0; i < ticket.length; i++){
-    if (i < ticket.length / 2){
-      left += +ticket[i]
+  for (let i = 0; i < string.length; i++){
+    if (string[i] === string[i].toLowerCase()){
+      result += string[i].toUpperCase()
     } else {
-      right += +ticket[i]
+      result += string[i].toLowerCase()
     }
   }
 
-  return left === right
+  return result
 }
 </script>
 </body>
