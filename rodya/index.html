@@ -8,7 +8,20 @@
   <title>Document</title>
 </head>
 <body>
+<script>
+  function isHappyTicket(ticket) {
+  let left = 0, right = 0
 
-  <script src="isPerfect.js"></script>
+  for (let i = 0; i < ticket.length; i++){
+    if (i < ticket.length / 2){
+      left += +ticket[i]
+    } else {
+      right += +ticket[i]
+    }
+  }
+
+  return left === right
+}
+</script>
 </body>
 </html>
